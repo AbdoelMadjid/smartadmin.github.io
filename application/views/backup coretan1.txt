@@ -1,0 +1,60 @@
+array(1) { [0]=> array(6) { ["nik"]=> string(16) "3275050209990099" ["email"]=> string(23) "lousianaputri@gmail.com" ["fullname"]=> string(8) "Lousiana" ["nickname"]=> string(5) "Lussy" ["role"]=> string(11) "super admin" ["id_role"]=> string(1) "1" } }
+
+array(1) { ["menuData"]=> array(3) { [0]=> array(5) { ["menu_id"]=> string(6) "mn_001" ["title"]=> string(9) "Dashboard" ["url"]=> string(9) "Dashboard" ["icon"]=> string(30) "nav-icon fas fa-tachometer-alt" ["is_active"]=> string(1) "1" } [1]=> array(5) { ["menu_id"]=> string(6) "mn_002" ["title"]=> string(12) "Upload Video" ["url"]=> string(11) "UploadVideo" ["icon"]=> string(21) "nav-icon fas fa-video" ["is_active"]=> string(1) "1" } [2]=> array(5) { ["menu_id"]=> string(6) "mn_003" ["title"]=> string(8) "Add User" ["url"]=> string(7) "AddUser" ["icon"]=> string(21) "nav-icon fas fa-users" ["is_active"]=> string(1) "1" } } }
+
+array(1) { ["menuData"]=> array(3) { [0]=> array(6) { ["nik"]=> string(16) "3275050209990099" ["email"]=> string(23) "lousianaputri@gmail.com" ["fullname"]=> string(8) "Lousiana" ["nickname"]=> string(5) "Lussy" ["role"]=> string(11) "super admin" ["id_role"]=> string(1) "1" } [1]=> array(5) { ["menu_id"]=> string(6) "mn_002" ["title"]=> string(12) "Upload Video" ["url"]=> string(11) "UploadVideo" ["icon"]=> string(21) "nav-icon fas fa-video" ["is_active"]=> string(1) "1" } [2]=> array(5) { ["menu_id"]=> string(6) "mn_003" ["title"]=> string(8) "Add User" ["url"]=> string(7) "AddUser" ["icon"]=> string(21) "nav-icon fas fa-users" ["is_active"]=> string(1) "1" } } }
+
+array(3) { [0]=> array(6) { ["nik"]=> string(16) "3275050209990099" ["email"]=> string(23) "lousianaputri@gmail.com" ["fullname"]=> string(8) "Lousiana" ["nickname"]=> string(5) "Lussy" ["role"]=> string(11) "super admin" ["id_role"]=> string(1) "1" } [1]=> array(5) { ["menu_id"]=> string(6) "mn_002" ["title"]=> string(12) "Upload Video" ["url"]=> string(11) "UploadVideo" ["icon"]=> string(21) "nav-icon fas fa-video" ["is_active"]=> string(1) "1" } [2]=> array(5) { ["menu_id"]=> string(6) "mn_003" ["title"]=> string(8) "Add User" ["url"]=> string(7) "AddUser" ["icon"]=> string(21) "nav-icon fas fa-users" ["is_active"]=> string(1) "1" } }
+
+<?php foreach ($menuData as $item) : ?>
+  <?= var_dump($menuData[0]['id_role']);
+  ?>
+<?php endforeach; ?>
+
+<?php
+for ($x = 0; $x < count($menuData); $x++) {
+  var_dump($menuData[$x]['title']);
+}
+die;
+?>
+
+<!-- <?php foreach ($menuData as $newMenuData) : ?>
+                <?php if ($title == $menuData['menuData'][0]['title']) : ?>
+                  <a href="<?= base_url($menuData['menuData'][0]['url']); ?>" class="nav-link active">
+                  <?php else : ?>
+                    <a href="<?= base_url($menuData['menuData'][0]['url']); ?>" class="nav-link">
+                    <?php endif; ?>
+
+                <i class="<?= base_url($menuData['menuData'][0]['icon'] . ' '); ?>"></i>
+                <p>
+                  <?= $menuData['menuData'][0]['title']; ?>
+                </p>
+                </a>
+              <?php endforeach; ?> -->
+
+<!-- <?php foreach ($menuData as $newMenuData) : ?>
+                <?php if ($title == $menuData['menuData'][0]['title']) : ?>
+                  <a href="<?= base_url($menuData['menuData'][0]['url']); ?>" class="nav-link active">
+                  <?php else : ?>
+                    <a href="<?= base_url($menuData['menuData'][0]['url']); ?>" class="nav-link">
+                    <?php endif; ?>
+
+                    <i class="<?= base_url($menuData['menuData'][0]['icon'] . ' '); ?>"></i>
+                    <p>
+                      <?= $menuData['menuData'][0]['title']; ?>
+                    </p>
+                    </a>
+                  <?php endforeach; ?> -->
+
+<?php for ($x = 0; $x < count($menuData) - 2; $x++) : ?>
+  <?= $menuData[$x]['icon'];  ?><br>
+<?php endfor; ?>
+
+
+
+
+
+
+
+
+

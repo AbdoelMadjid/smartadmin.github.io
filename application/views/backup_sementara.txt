@@ -1,0 +1,16 @@
+<?php var_dump($myMenuData);
+              die; ?>
+
+ <!-- <?php for ($x = 0; $x < count($menuData) - 2; $x++) : ?>
+              <?php if ($menuData['title'] == $menuData[$x]['title']) : ?>
+                <a href="<?= base_url($menuData[$x]['url']); ?>" class="nav-link active">
+                <?php else : ?>
+                  <a href="<?= base_url($menuData[$x]['url']); ?>" class="nav-link">
+                  <?php endif; ?>
+
+                  <i class="<?= base_url($menuData[$x]['icon'] . ' '); ?>"></i>
+                  <p class="pl-2">
+                    <?= $menuData[$x]['title']; ?>
+                  </p>
+                  </a>
+                <?php endfor; ?> -->
